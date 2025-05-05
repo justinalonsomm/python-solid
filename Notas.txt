@@ -1,0 +1,34 @@
+Bajo Acomplamiento
+Alto Acomplamiento
+el acomplamiento mide el grado de dependencia entre módulos
+
+
+S:
+    Responsabilidad Única: Una sola razón para cambiar
+    Divide Responsabilidades: una clase = una tarea(Se pueden añadir varias tareas pero que sean realizaciones altamente)
+    Mejora la organizacion del código
+
+O:
+
+    Open/Close Principle
+    el software debe estar abierto a la extención pero cerrado
+
+L:
+    las subclases deben de sustituir a su clas base sin alterar el funcionamiento
+    Evitar que las subclases rompan el comportamiento esperado
+
+I:
+    Los clientes no deberían estar obligados a depender de interfaces que no usan
+    Mejor usar interfaz pequeñas y específicas
+    ser consiso de que hace esa interfaz, que sea bien cohesiva, es decir que que sea utilizable.
+    un cliente es una clase que utilice otra clase, a eso se le llama cliente.
+        class flyer:
+            def fly(self): pass
+
+        Class Swimer:
+            def Swim(self): pass
+        
+        Class Duck(Flyer, Swim): pass #En este caso "Duck" sería el cliente
+
+D:
+
